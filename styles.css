@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #1a2a6c, #00d2ff);
+    color: #333;
+}
+
+header {
+    background: linear-gradient(45deg, #00b09b, #00d2ff);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+
+.news-article {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.news-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-bottom: 5px solid #00b09b;
+}
+
+.news-content {
+    padding: 2rem;
+}
+
+.news-content h2 {
+    color: #1a2a6c;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    border-left: 4px solid #00d2ff;
+    padding-left: 1rem;
+}
+
+.news-text {
+    font-size: 1.1rem;
+}
+
+.news-text p {
+    margin-bottom: 1.2rem;
+    text-align: justify;
+}
+
+.news-text ul {
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+.news-text li {
+    margin-bottom: 0.8rem;
+    padding-left: 0.5rem;
+}
+
+footer {
+    background: linear-gradient(45deg, #1a2a6c, #00b09b);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+.footer-content p {
+    opacity: 0.8;
+}
+
+/* Анимации */
+.news-article {
+    transition: transform 0.3s ease;
+}
+
+.news-article:hover {
+    transform: translateY(-5px);
+}
+
+.news-content h2 {
+    transition: color 0.3s ease;
+}
+
+.news-content h2:hover {
+    color: #00b09b;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 2rem;
+    }
+    
+    .news-content {
+        padding: 1rem;
+    }
+    
+    .news-content h2 {
+        font-size: 1.4rem;
+    }
+    
+    .news-image {
+        height: 250px;
+    }
+}
